@@ -40,23 +40,22 @@
   }
   
   /*hover*/
-  .card__icon-button .heart .main-body {
-    fill: transparent;
-    transition: fill 0.3s ease-in-out 0.05s;
-  }
-  
-  .card__icon-button:hover .heart .main-body {
-    fill: var(--countour-color);
-  }
-  
+  .card__icon-button .heart .main-body,
   .card__icon-button .heart .core {
-    fill: transparent;
-    transition: fill 0.3s ease-in-out;
+      fill: transparent;
+      transition: fill 0.3s ease-in-out;
   }
   
+  /* Стиль при наведении для .main-body */
+  .card__icon-button:hover .heart .main-body {
+      fill: var(--countour-color);
+      transition-delay: 0.05s;
+  }
+  
+  /* Стиль при наведении для .core */
   .card__icon-button:hover .heart .core {
-    fill: var(--countour-color);
-    transition-delay: 0.05s;
+      fill: var(--countour-color);
+      transition-delay: 0.05s;
   }
   
   /*active*/
