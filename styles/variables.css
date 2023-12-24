@@ -8,7 +8,7 @@
     --font-opsz: 18;
     --accent-color: #000000;
     --accent-color-opacity: rgb(0,0,0,0.6);
-    --font-size-press-samaller: 0.875rem; 
+    --font-size-press-samaller: 0.875rem;
     --font-color-button: #ffffff;
     /*bg*/
     --bg-color: #FFFFFF;
@@ -18,7 +18,7 @@
     --second-gradient-bg-first: #e7e7e7;
     --second-gradient-bg-second: #1a1a1a;
     --background-light: #ffffff;
-    --background-dark: #000000; 
+    --background-dark: #000000;
     --stripe-color-light: #d3d3d3;
     --stripe-color-tr: transparent;
     --picture-text-stroke: #FFFFFF;

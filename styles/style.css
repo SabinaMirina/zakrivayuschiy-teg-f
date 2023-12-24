@@ -250,9 +250,10 @@
   outline: 2px solid var(--accent-color);
   outline-offset: -1px;
   cursor: pointer;
-  padding: 9px 2.062rem;
+  padding: 9px 17px;
   max-height: 38px;
   position: relative;
+  width: 8.125rem;
 }
 
 .card__like-button:focus {

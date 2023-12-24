@@ -29,6 +29,7 @@
     transition: opacity 0.3s ease;
     cursor: pointer;
   }
+
   
   .card__icon-button:focus {
     outline: none;
@@ -111,6 +112,7 @@
     animation-direction: alternate;
     animation-iteration-count: 1;
     }  
+
 
 @keyframes heartbeat {
     0% {

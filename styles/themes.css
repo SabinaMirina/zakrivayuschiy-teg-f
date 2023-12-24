@@ -12,6 +12,20 @@
     --text-color: #000000;
     /*bg*/
     --bg-color: #FFFFFF;
+    --accent-color: #000000;
+    --accent-color-opacity: rgb(0,0,0,0.6);
+    --font-color-button: #ffffff;
+    /*gradients-bg*/
+    --first-gradient-bg-one: #d3d3d3;
+    --second-gradient-bg-first: #e7e7e7;
+    --second-gradient-bg-second: #1a1a1a;
+    --background-light: #ffffff;
+    --background-dark: #000000; 
+    --stripe-color-light: #d3d3d3;
+    --stripe-color-tr: transparent;
+    --picture-text-stroke: #FFFFFF;
+    --countour-color: #000000;
+    --sparks-color: #FF0000;
 }
 
 :root.theme-dark {
@@ -24,7 +38,7 @@
     /*gradients-bg*/
     --second-gradient-bg-first: #007F0C;
     --second-gradient-bg-second: #004306;
-    --stripe-color-light: #000000; 
+    --stripe-color-light: #000000;
     --stripe-color-tr: transparent;
     /*heart-icon*/
     --countour-color: #00CC14;
@@ -47,11 +61,53 @@
         /*gradients-bg*/
         --second-gradient-bg-first: #007F0C;
         --second-gradient-bg-second: #004306;
-        --stripe-color-light: #000000; 
+        --stripe-color-light: #000000;
         --stripe-color-tr: transparent;
         /*heart-icon*/
         --countour-color: #00CC14;
         --sparks-color: #FF0000;
         --font-color-button: #000000;
     }
+    .page {
+        background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--second-gradient-bg-first) , var(--second-gradient-bg-second));
+    }
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /*fonts*/
+        --main-font-Inter: 'Inter-Flex-Variable';
+        --press-font: 'Press Start 2P';
+        --font-wght-title: 700;
+        --font-wght-text: 400;
+        --font-opsz: 18;
+        --accent-color: #000000;
+        --accent-color-opacity: rgb(0,0,0,0.6);
+        --font-size-press-samaller: 0.875rem;
+        --font-color-button: #ffffff;
+        /*bg*/
+        --bg-color: #FFFFFF;
+        --bg-image: url(../images/background-light.png);
+        /*gradients-bg*/
+        --first-gradient-bg-one: #d3d3d3;
+        --second-gradient-bg-first: #e7e7e7;
+        --second-gradient-bg-second: #1a1a1a;
+        --background-light: #ffffff;
+        --background-dark: #000000; 
+        --stripe-color-light: #d3d3d3;
+        --stripe-color-tr: transparent;
+        --picture-text-stroke: #FFFFFF;
+        /*proportions*/
+        --width-main-mobile: 23.4375rem;
+        /*heart-icon*/
+        --countour-color: #000000;
+        --sparks-color: #FF0000;
+    }
+
+    .page {
+        background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--second-gradient-bg-first) 0.01%, var(--second-gradient-bg-second));
+    }
+
+}
+
+

@@ -543,11 +543,11 @@
                     продолжить
                 </h2>
             </article>
-        </form>
-        <button class="window__button" type="button" onclick="window['dialog-id'].close()">
-            ок
-        </button>
-        <form method="dialog">
+            <form id="dialog-form">
+                <button class="window__button" type="button" onclick="closeDialog()">
+                    ок
+                </button>
+            </form>
         </dialog>
         <script src="./scripts/like.js"></script>
     </body>
