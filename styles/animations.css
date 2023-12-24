@@ -12,3 +12,120 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes triangle {
+    0% {
+      left: -20px;
+    }
+    100% {
+      left: -16px;
+    }
+  }
+
+/*Кнопка_like-icon*/
+.card__icon-button {
+    background-color: transparent;
+    border: none;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card__icon-button:focus {
+    outline: none;
+  }
+  
+  .card__icon-button:focus-visible {
+    outline: 2px solid var(--accent-color);
+  }
+  
+  /*hover*/
+  .card__icon-button .heart .main-body {
+    fill: transparent;
+    transition: fill 0.3s ease-in-out 0.05s;
+  }
+  
+  .card__icon-button:hover .heart .main-body {
+    fill: var(--countour-color);
+  }
+  
+  .card__icon-button .heart .core {
+    fill: transparent;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .card__icon-button:hover .heart .core {
+    fill: var(--countour-color);
+    transition-delay: 0.05s;
+  }
+  
+  /*active*/
+  .card__icon-button .heart .main-body {
+    fill: transparent;
+    transition: fill 0.3s ease-in-out 0.05s;
+  }
+  
+  .card__icon-button:active .heart .main-body {
+    fill: var(--sparks-color);
+  }
+  
+  .card__icon-button .heart .core {
+    fill: transparent;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .card__icon-button:active .heart .core {
+    fill: var(--sparks-color);
+    transition-delay: 0.05s;
+  }
+  
+  /*click*/
+  .like-icon.is-liked .heart .main-body {
+    transition: fill 0.3s ease-in-out 0.05s;
+    fill: var(--sparks-color);
+  }
+  
+  .like-icon.is-liked .heart .contour {
+    transition: fill 0.3s ease-in-out 0.06s;
+    fill: var(--sparks-color);
+  }
+  
+  .like-icon.is-liked .heart .core {
+    transition: fill 0.3s ease-in-out 0.07s;
+    fill: var(--sparks-color);
+  }
+  
+  .like-icon.is-liked .heart {
+    animation-name: heartbeat;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+  }
+  
+  .like-icon.is-liked .sparks {
+    animation-name: sparkFlash;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+  }  
+
+@keyframes heartbeat {
+    0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+  }
+  
+  @keyframes sparkFlash {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
