@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="./styles/themes.css">
         <link rel="icon" href="./images/favicon.ico" sizes="any">
         <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="./images/favicon.png">
+        <link rel="apple-touch-icon" href="./images/favicon (4).png">
         <script src="./scripts/set-theme.js"></script>
     </head>
     <body class="page">
@@ -543,8 +543,8 @@
                     продолжить
                 </h2>
             </article>
-            <form id="dialog-form">
-                <button class="window__button" type="button" onclick="closeDialog()">
+            <form class="form__window" method="dialog">
+                <button class="window__button" type="button" onclick="window['dialog-id'].close()">
                     ок
                 </button>
             </form>

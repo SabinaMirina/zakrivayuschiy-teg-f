@@ -412,6 +412,10 @@
   height: 39px;
 }
 
+.form__window {
+  width: 100%;
+}
+
 .window__button {
   display: flex;
   flex-direction: column;
@@ -421,6 +425,8 @@
   border: 2px solid var(--accent-color);
   color: inherit;
   font-family: inherit;
+  cursor: pointer;
+  width: clamp(16.062rem, 15.2694rem + 3.3818vw, 18.313rem);
 }
 
 /*----------Media----------*/
