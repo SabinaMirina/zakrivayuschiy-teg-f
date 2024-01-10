@@ -15,6 +15,8 @@
     --accent-color: #000000;
     --accent-color-opacity: rgb(0,0,0,0.6);
     --font-color-button: #ffffff;
+    --font-color-button-reverse: #ffffff;
+    --accent-color-floppy: #000000;
     /*gradients-bg*/
     --first-gradient-bg-one: #d3d3d3;
     --second-gradient-bg-first: #e7e7e7;
@@ -44,6 +46,9 @@
     --countour-color: #00CC14;
     --sparks-color: #FF0000;
     --font-color-button: #000000;
+    --font-color-button-reverse: #00CC14;
+    --accent-color-floppy: #000000;
+    --picture-text-stroke: #000000;
 }
 
 .page.theme-dark {
@@ -67,7 +72,11 @@
         --countour-color: #00CC14;
         --sparks-color: #FF0000;
         --font-color-button: #000000;
+        --font-color-button-reverse: #00CC14;
+        --accent-color-floppy: #000000;
+        --picture-text-stroke: #000000;
     }
+
     .page {
         background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--second-gradient-bg-first) , var(--second-gradient-bg-second));
     }
@@ -97,9 +106,6 @@
         --stripe-color-light: #d3d3d3;
         --stripe-color-tr: transparent;
         --picture-text-stroke: #FFFFFF;
-        /*proportions*/
-        --width-main-mobile: 23.4375rem;
-        /*heart-icon*/
         --countour-color: #000000;
         --sparks-color: #FF0000;
     }

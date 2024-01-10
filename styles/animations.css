@@ -26,71 +26,77 @@
 .card__icon-button {
     background-color: transparent;
     border: none;
-    transition: opacity 0.3s ease;
+    outline: 2px solid transparent;
+    transition: outline 0.3s ease;
     cursor: pointer;
+    display: flex;
+    padding: 0;
+    margin-right: 7px;
+    padding-bottom: 0;
+    grid-column-start: col3;
+    grid-row-start: start;
   }
 
-  
+.like-icon {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
   .card__icon-button:focus {
     outline: none;
   }
   
   .card__icon-button:focus-visible {
     outline: 2px solid var(--accent-color);
+    outline-offset: -2px;
   }
   
-  /*hover*/
-  .card__icon-button .heart .main-body,
   .card__icon-button .heart .core {
-      fill: transparent;
-      transition: fill 0.3s ease-in-out;
+    fill: transparent;
+    transition: fill 0.3s 0.03s;
   }
-  
-  /* Стиль при наведении для .main-body */
+
+.card__icon-button .heart .main-body {
+  fill: transparent;
+  transition: fill 0.3s;
+}
+ 
+  /*hover*/
   .card__icon-button:hover .heart .main-body {
-      fill: var(--countour-color);
-      transition-delay: 0.05s;
+    fill: var(--countour-color);
+    transition: fill 0.3s 0.05s;
   }
   
-  /* Стиль при наведении для .core */
   .card__icon-button:hover .heart .core {
       fill: var(--countour-color);
-      transition-delay: 0.05s;
+      transition: fill 0.3s;
   }
   
   /*active*/
-  .card__icon-button .heart .main-body {
-    fill: transparent;
-    transition: fill 0.3s ease-in-out 0.05s;
-  }
-  
   .card__icon-button:active .heart .main-body {
     fill: var(--sparks-color);
+    transition: fill 0.3s 0.05s;
   }
-  
-  .card__icon-button .heart .core {
-    fill: transparent;
-    transition: fill 0.3s ease-in-out;
-  }
-  
+
   .card__icon-button:active .heart .core {
     fill: var(--sparks-color);
-    transition-delay: 0.05s;
+    transition: fill 0.3s;
   }
   
   /*click*/
   .like-icon.is-liked .heart .main-body {
-    transition: fill 0.3s ease-in-out 0.05s;
     fill: var(--sparks-color);
+    transition: fill 0.3s 0.05s;
   }
   
   .like-icon.is-liked .heart .contour {
-    transition: fill 0.3s ease-in-out 0.06s;
+    transition: fill 0.3s 0.06s;
     fill: var(--sparks-color);
   }
   
   .like-icon.is-liked .heart .core {
-    transition: fill 0.3s ease-in-out 0.07s;
+    transition: fill 0.3s;
     fill: var(--sparks-color);
   }
   
@@ -100,7 +106,7 @@
     animation-timing-function: ease-in;
     animation-delay: 0.1s;
     animation-direction: alternate;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
   }
   
   .like-icon.is-liked .sparks {
@@ -118,7 +124,7 @@
       transform: scale(1);
   }
   100% {
-      transform: scale(1.5);
+      transform: scale(1.2);
   }
   }
   
