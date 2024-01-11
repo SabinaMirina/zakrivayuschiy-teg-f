@@ -18,9 +18,9 @@
     --font-color-button-reverse: #ffffff;
     --accent-color-floppy: #000000;
     /*gradients-bg*/
-    --first-gradient-bg-one: #d3d3d3;
-    --second-gradient-bg-first: #e7e7e7;
-    --second-gradient-bg-second: #1a1a1a;
+    --main-gradient-bg: #d3d3d3;
+    --n-main-gradient-bg-light: #e7e7e7;
+    --n-main-gradient-bg-dark: #1a1a1a;
     --background-light: #ffffff;
     --background-dark: #000000;
     --stripe-color-light: #d3d3d3;
@@ -38,8 +38,8 @@
     /*bg*/
     --bg-color: #000000;
     /*gradients-bg*/
-    --second-gradient-bg-first: #007F0C;
-    --second-gradient-bg-second: #004306;
+    --n-main-gradient-bg-light: #007F0C;
+    --n-main-gradient-bg-dark: #004306;
     --stripe-color-light: #000000;
     --stripe-color-tr: transparent;
     /*heart-icon*/
@@ -52,7 +52,7 @@
 }
 
 .page.theme-dark {
-    background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--second-gradient-bg-first) , var(--second-gradient-bg-second));
+    background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--n-main-gradient-bg-light) , var(--n-main-gradient-bg-dark));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,8 +64,8 @@
         /*bg*/
         --bg-color: #000000;
         /*gradients-bg*/
-        --second-gradient-bg-first: #007F0C;
-        --second-gradient-bg-second: #004306;
+        --n-main-gradient-bg-light: #007F0C;
+        --n-main-gradient-bg-dark: #004306;
         --stripe-color-light: #000000;
         --stripe-color-tr: transparent;
         /*heart-icon*/
@@ -78,7 +78,7 @@
     }
 
     .page {
-        background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--second-gradient-bg-first) , var(--second-gradient-bg-second));
+        background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--n-main-gradient-bg-light) , var(--n-main-gradient-bg-dark));
     }
 }
 
@@ -98,9 +98,9 @@
         --bg-color: #FFFFFF;
         --bg-image: url(../images/background-light.png);
         /*gradients-bg*/
-        --first-gradient-bg-one: #d3d3d3;
-        --second-gradient-bg-first: #e7e7e7;
-        --second-gradient-bg-second: #1a1a1a;
+        --main-gradient-bg: #d3d3d3;
+        --n-main-gradient-bg-light: #e7e7e7;
+        --n-main-gradient-bg-dark: #1a1a1a;
         --background-light: #ffffff;
         --background-dark: #000000;
         --stripe-color-light: #d3d3d3;
@@ -111,7 +111,7 @@
     }
 
     .page {
-        background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--second-gradient-bg-first) 0.01%, var(--second-gradient-bg-second));
+        background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--n-main-gradient-bg-light) 0.01%, var(--n-main-gradient-bg-dark));
     }
 
 }

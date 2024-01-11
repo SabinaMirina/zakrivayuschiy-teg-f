@@ -18,7 +18,7 @@
   font-family: var(--main-font, sans-serif);
   font-variation-settings: 'wght' var(--font-wght-text);
   color: var(--accent-color);
-  background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--second-gradient-bg-first) 0.01%, var(--second-gradient-bg-second));
+  background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--n-main-gradient-bg-light) 0.01%, var(--n-main-gradient-bg-dark));
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -306,11 +306,14 @@ a {
   color: var(--font-color-button-reverse);
 }
 
+/*Общие настройки надписи для кнопок "like","Сохранить на память" и "ок" */
 .button__text {
   font-size: 0.875rem;
   width: 16.625rem;
   mix-blend-mode: difference;
+  line-height: 90%;
 }
+
 
 /*Кнопка_like и иконка*/
 .card__controls {
@@ -363,6 +366,10 @@ a {
 .common__button:hover .swg__icon-floppy_use {
   z-index: 1;
   mix-blend-mode: difference;
+}
+
+.button__text_margin {
+  padding-top: 3.5px;
 }
 
 /*----------Dialog----------*/
@@ -441,9 +448,9 @@ a {
 
   }  
 
-.text_first_mobile {
-  margin-right: 0.24rem;
-}
+  .text_first_mobile {
+    margin-right: 0.24rem;
+  }
 
   .custom__button {
     padding: 4% 1.25rem;
