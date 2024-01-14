@@ -6,17 +6,129 @@
 */
 
 :root.theme-light {
+  /*fonts*/
+  --font-wght-title: 700;
+  --font-wght-text: 400;
+  --text-color: #000000;
+  /*bg*/
+  --bg-color: #ffffff;
+  --accent-color: #000000;
+  --accent-color-reverse: #ffffff;
+  --accent-color-opacity: rgb(0, 0, 0, 0.6);
+  --font-color-button: #ffffff;
+  --font-color-button-reverse: #ffffff;
+  --accent-color-floppy: #000000;
+  /*gradients-bg*/
+  --main-gradient-bg: #d3d3d3;
+  --n-main-gradient-bg-light: #e7e7e7;
+  --n-main-gradient-bg-dark: #1a1a1a;
+  --background-light: #ffffff;
+  --background-dark: #000000;
+  --stripe-color-light: #d3d3d3;
+  --stripe-color-tr: transparent;
+  --picture-text-stroke: #ffffff;
+  --countour-color: #000000;
+  --sparks-color: #ff0000;
+}
+
+:root.theme-dark {
+  --font-wght-title: 785;
+  --font-wght-text: 465;
+  --text-color: #00cc14;
+  --accent-color: #00cc14;
+  --accent-color-reverse: #00cc14;
+  /*bg*/
+  --bg-color: #000000;
+  /*gradients-bg*/
+  --n-main-gradient-bg-light: #007f0c;
+  --n-main-gradient-bg-dark: #004306;
+  --stripe-color-light: #000000;
+  --stripe-color-tr: transparent;
+  /*heart-icon*/
+  --countour-color: #00cc14;
+  --sparks-color: #ff0000;
+  --font-color-button: #000000;
+  --font-color-button-reverse: #00cc14;
+  --accent-color-floppy: #000000;
+  --picture-text-stroke: #000000;
+}
+
+.page.theme-dark {
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--stripe-color-light) 0px 2px,
+      var(--stripe-color-tr) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--stripe-color-light) 0px 2px,
+      var(--stripe-color-tr) 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--n-main-gradient-bg-light),
+      var(--n-main-gradient-bg-dark)
+    );
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-wght-title: 785;
+    --font-wght-text: 465;
+    --text-color: #00cc14;
+    --accent-color: #00cc14;
+    --accent-color-reverse: #00cc14;
+    /*bg*/
+    --bg-color: #000000;
+    /*gradients-bg*/
+    --n-main-gradient-bg-light: #007f0c;
+    --n-main-gradient-bg-dark: #004306;
+    --stripe-color-light: #000000;
+    --stripe-color-tr: transparent;
+    /*heart-icon*/
+    --countour-color: #00cc14;
+    --sparks-color: #ff0000;
+    --font-color-button: #000000;
+    --font-color-button-reverse: #00cc14;
+    --accent-color-floppy: #000000;
+    --picture-text-stroke: #000000;
+  }
+
+  .page {
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--stripe-color-light) 0px 2px,
+        var(--stripe-color-tr) 2px 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        var(--stripe-color-light) 0px 2px,
+        var(--stripe-color-tr) 2px 4px
+      ),
+      linear-gradient(
+        to bottom,
+        var(--n-main-gradient-bg-light),
+        var(--n-main-gradient-bg-dark)
+      );
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
     /*fonts*/
+    --main-font-Inter: "Inter-Flex-Variable";
+    --press-font: "Press Start 2P";
     --font-wght-title: 700;
     --font-wght-text: 400;
-    --text-color: #000000;
-    /*bg*/
-    --bg-color: #FFFFFF;
+    --font-opsz: 18;
     --accent-color: #000000;
-    --accent-color-opacity: rgb(0,0,0,0.6);
+    --accent-color-opacity: rgb(0, 0, 0, 0.6);
+    --font-size-press-samaller: 0.875rem;
     --font-color-button: #ffffff;
-    --font-color-button-reverse: #ffffff;
-    --accent-color-floppy: #000000;
+    --accent-color-reverse: #ffffff;
+    /*bg*/
+    --bg-color: #ffffff;
+    --bg-image: url(../images/background-light.png);
     /*gradients-bg*/
     --main-gradient-bg: #d3d3d3;
     --n-main-gradient-bg-light: #e7e7e7;
@@ -25,95 +137,26 @@
     --background-dark: #000000;
     --stripe-color-light: #d3d3d3;
     --stripe-color-tr: transparent;
-    --picture-text-stroke: #FFFFFF;
+    --picture-text-stroke: #ffffff;
     --countour-color: #000000;
-    --sparks-color: #FF0000;
+    --sparks-color: #ff0000;
+  }
+
+  .page {
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--stripe-color-light) 0px 2px,
+        var(--stripe-color-tr) 2px 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        var(--stripe-color-light) 0px 2px,
+        var(--stripe-color-tr) 2px 4px
+      ),
+      linear-gradient(
+        to bottom,
+        var(--n-main-gradient-bg-light) 0.01%,
+        var(--n-main-gradient-bg-dark)
+      );
+  }
 }
-
-:root.theme-dark {
-    --font-wght-title: 785;
-    --font-wght-text: 465;
-    --text-color: #00CC14;
-    --accent-color: #00CC14;
-    /*bg*/
-    --bg-color: #000000;
-    /*gradients-bg*/
-    --n-main-gradient-bg-light: #007F0C;
-    --n-main-gradient-bg-dark: #004306;
-    --stripe-color-light: #000000;
-    --stripe-color-tr: transparent;
-    /*heart-icon*/
-    --countour-color: #00CC14;
-    --sparks-color: #FF0000;
-    --font-color-button: #000000;
-    --font-color-button-reverse: #00CC14;
-    --accent-color-floppy: #000000;
-    --picture-text-stroke: #000000;
-}
-
-.page.theme-dark {
-    background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--n-main-gradient-bg-light) , var(--n-main-gradient-bg-dark));
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --font-wght-title: 785;
-        --font-wght-text: 465;
-        --text-color: #00CC14;
-        --accent-color: #00CC14;
-        /*bg*/
-        --bg-color: #000000;
-        /*gradients-bg*/
-        --n-main-gradient-bg-light: #007F0C;
-        --n-main-gradient-bg-dark: #004306;
-        --stripe-color-light: #000000;
-        --stripe-color-tr: transparent;
-        /*heart-icon*/
-        --countour-color: #00CC14;
-        --sparks-color: #FF0000;
-        --font-color-button: #000000;
-        --font-color-button-reverse: #00CC14;
-        --accent-color-floppy: #000000;
-        --picture-text-stroke: #000000;
-    }
-
-    .page {
-        background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--n-main-gradient-bg-light) , var(--n-main-gradient-bg-dark));
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        /*fonts*/
-        --main-font-Inter: 'Inter-Flex-Variable';
-        --press-font: 'Press Start 2P';
-        --font-wght-title: 700;
-        --font-wght-text: 400;
-        --font-opsz: 18;
-        --accent-color: #000000;
-        --accent-color-opacity: rgb(0,0,0,0.6);
-        --font-size-press-samaller: 0.875rem;
-        --font-color-button: #ffffff;
-        /*bg*/
-        --bg-color: #FFFFFF;
-        --bg-image: url(../images/background-light.png);
-        /*gradients-bg*/
-        --main-gradient-bg: #d3d3d3;
-        --n-main-gradient-bg-light: #e7e7e7;
-        --n-main-gradient-bg-dark: #1a1a1a;
-        --background-light: #ffffff;
-        --background-dark: #000000;
-        --stripe-color-light: #d3d3d3;
-        --stripe-color-tr: transparent;
-        --picture-text-stroke: #FFFFFF;
-        --countour-color: #000000;
-        --sparks-color: #FF0000;
-    }
-
-    .page {
-        background-image: repeating-linear-gradient(to right, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), repeating-linear-gradient(to bottom, var(--stripe-color-light) 0px 2px, var(--stripe-color-tr) 2px 4px), linear-gradient(to bottom, var(--n-main-gradient-bg-light) 0.01%, var(--n-main-gradient-bg-dark));
-    }
-
-}
-
-
